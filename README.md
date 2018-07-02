@@ -1,6 +1,6 @@
 # Aye-aye
 
-![](https://lemur.duke.edu/wordpress/wp-content/uploads/2017/09/Agatha-3-Months-David-Haring.jpg)
+![](./docs/aye.png)
 
 This is a simple slack app.
 
