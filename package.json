@@ -9,9 +9,12 @@
     "update-fn": "aws lambda update-function-code --function-name $PROJECT_NAME --s3-bucket $S3_BUCKET --s3-key lambda-fns/$PROJECT_NAME.zip",
     "deploy": "npm run zip && npm run s3-cp && npm run update-fn",
     "invoke": "aws lambda invoke --function-name ${PROJECT_NAME} output.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "1.0.0-beta.8"
+  }
 }

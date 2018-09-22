@@ -1,0 +1,19 @@
+version: 0.2
+
+env:
+  variables:
+    FOO: "bar"
+  parameter-store:
+    meh: "ok"
+
+phases:
+  install:
+    commands:
+      - npm install
+  build:
+    commands:
+      - npm test
+  post_build:
+    commands:
+      - echo Build completed on `date`
+
