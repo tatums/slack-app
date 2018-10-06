@@ -1,15 +1,15 @@
 # Aye-aye
+<img src="./docs/aye.png" width="150" height="100">
 
-![](./docs/aye.png)
 
-This is a simple slack app.
+This is a simple slack app. There are no servers here 💪. This app uses [AWS Lambda](https://aws.amazon.com/lambda/), [API Gateway](https://aws.amazon.com/api-gateway/), and [CloudFormation](https://aws.amazon.com/cloudformation/) to build all the resources -- [Infrastructure as code](https://en.wikipedia.org/wiki/Infrastructure_as_Code) 
 
 ### Development setup
 
 #### [AWS CLI](https://aws.amazon.com/cli/)
-This project uses cloudformation to build out infrastructure like API Gateway, lambda, and IAM permissions. Make sure you have the AWS cli setup first.
+You'll want to ensure you have the AWS cli setup first.
 
-To find out if you're setup, try listing s3 buckets.
+You can try a bash command to find out if you're setup. This will try listing s3 buckets in AWS.
 
     $ aws s3 ls
 
